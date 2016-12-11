@@ -93,11 +93,17 @@
 
          } else {
           document.querySelector('.direction').classList.remove('up')
-
          }
-
        }
      })
+
+     $(window).scroll(function() {
+
+       var theta = $(window).scrollTop() / 100 % Math.PI;
+
+       $('.header-image').css({ transform: 'rotate(' + theta + 'rad)' });
+     });
+
     </script>
 
   </body>

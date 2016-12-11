@@ -68,7 +68,7 @@ li a:visited {
 }
 
 li a:hover {
-  color: red;
+  color: #dd0000;
   text-decoration: none;
 }
 /* Navigation endet */
@@ -93,11 +93,6 @@ li a:hover {
   width: 8%;
   text-align: center;
   margin-top: 1%;
-  transition: all 1s;
-}
-
-.header-image:hover {
-transform: rotate(360deg);
 }
 
 .headline {
