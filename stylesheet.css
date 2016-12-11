@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #d0d0e2;
+  font-size: 100%;
+  height: 3000px;
+}
+
+.navigation {
+ position: fixed;
+ margin: 0 auto;
+ width: 100%;
+ text-align: center;
+}
+
+li {
+ margin: 0;
+ padding: 0;
+ display: inline-block;
+ border: 1px solid grey;
+}
+
+.navigation a {
+ display: block;
+ padding: 10px;
+ list-style: none;
+ text-decoration: none;
+ color: #000;
+}
+
+.header {
+  background: url(images/Lasche.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  height: 200vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+}
+
+.header-image {
+  position: fixed;
+  left: 46%;
+  width: 8%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.headline {
+  color: #0c0c40;
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 7.5em;
+  line-height: 1em;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 85em) {
+.headline {
+    font-size: 6.5em;
+  }
+}
+
+@media screen and (max-width: 75em) {
+.headline {
+    font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 68em) {
+.headline {
+    font-size: 5.5em;
+  }
+}
+
+@media screen and (max-width: 62em) {
+.headline {
+    font-size: 5.0em;
+  }
+}
+
+@media screen and (max-width: 56em) {
+.headline {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (max-width: 52em) {
+.headline {
+    font-size: 4.0em;
+  }
+}
+
+@media screen and (max-width: 45em) {
+.headline {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 40em) {
+.headline {
+    font-size: 3.0em;
+  }
+}
+
+@media screen and (max-width: 35em) {
+.headline {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 29em) {
+.headline {
+    font-size: 2.0em;
+  }
+}
+
+.moewe {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 2%;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+.direction {
+  transition: transform 0.5s;
+}
