@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 body {
@@ -9,27 +11,66 @@ body {
   height: 3000px;
 }
 
+/* Navigation startet*/
+
 .navigation {
- position: fixed;
- margin: 0 auto;
- width: 100%;
- text-align: center;
+  position: fixed;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 90em) {
+  .navigation {
+    padding-bottom: 3%;
+  }
 }
 
 li {
- margin: 0;
- padding: 0;
- display: inline-block;
- border: 1px solid grey;
+  padding: 10px;
+  width: 13%;
+  display: inline-block;
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 2em;
+  list-style:none;
 }
 
-.navigation a {
- display: block;
- padding: 10px;
- list-style: none;
- text-decoration: none;
- color: #000;
+li a {
+  text-decoration: none;
 }
+
+li a:visited {
+  color: #000;
+}
+
+li a:hover,
+a:link {
+  color: #c10900;
+}
+
+@media screen and (max-width: 77em) {
+  li {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 55em) {
+  li {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  li {
+    font-size: 0.7em;
+  }
+}
+
+/* Navigation endet */
+/* Header startet */
 
 .header {
   background: url(images/Lasche.png);
@@ -50,6 +91,11 @@ li {
   width: 8%;
   text-align: center;
   margin-top: 1%;
+}
+
+.header-image:hover {
+transform: rotate(360deg);
+transition: transform 0.5s;
 }
 
 .headline {
@@ -120,6 +166,9 @@ li {
   }
 }
 
+/* Header endet */
+/* Möwenantimation startet */
+
 .moewe {
   width: 30%;
   margin-left: 35%;
@@ -136,3 +185,5 @@ li {
 .direction {
   transition: transform 0.5s;
 }
+
+/* Möwenantimation endet */
